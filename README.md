@@ -55,6 +55,9 @@ py -m http.server 8080 --directory frontend
 Then open `http://127.0.0.1:8080`.
 
 ## 6. Load the Chrome extension
+
+> **Experimental component:** The Chrome extension source code is included in this repository but has not been fully tested. The currently tested components are the Flask backend and web dashboard.
+
 1. Open `chrome://extensions`
 2. Enable **Developer mode**
 3. Select **Load unpacked**
@@ -62,7 +65,7 @@ Then open `http://127.0.0.1:8080`.
 5. Keep the Flask backend running, then pin LUMINA to the Chrome toolbar.
 6. Open a normal website, select text and use the extension's **Analyze selected text** action, or analyze the current page URL.
 
-The extension needs the local Flask backend running on the same computer.
+The extension requires the local Flask backend to be running on the same computer. Its functionality is provided for experimentation and future development.
 
 ## 7. Test the API
 With the backend running, open a new PowerShell terminal:
